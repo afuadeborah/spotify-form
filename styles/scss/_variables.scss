@@ -1,0 +1,20 @@
+// Colours
+$spotify-accent: #1DB954;
+$error: #E22134;
+$nav-blue: #509BF5;
+$fb-blue: #3A5897;
+
+$captcha: #F9F9F9;
+$input-border: #DFE1E6;
+
+$med-gray: #88898C;
+$dark-gray: #222326;
+
+// Font
+$body: 'Lato', sans-serif;
+
+@mixin font-size($size) {
+    font-size: ($size/10) * 1rem;
+}
+
+

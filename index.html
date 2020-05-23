@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign-up - Spotify</title>
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/spotify-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/spotify-16.png">
+  <link rel="manifest" href="./favicon_io/site.webmanifest">
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/813177f008.js" crossorigin="anonymous"></script>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+  <header>
+    
+    <nav>
+      <a href="">Canada (français)</a>
+
+      <span class="fas fa-times"></span>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <div class="wrapper">
+
+      <div class="intro">
+
+        <a href="#" class="logo"><img src="./assets/spotify.png" alt=""></a>
+
+        <h2>Sign up for free to start listening.</h2>
+
+        <button class="facebook">Sign up with Facebook</button>
+
+        <input type="checkbox" name="" id="">I agree to the <a>Spotify terms & conditions</a> and <a>Privacy policy</a></input>
+
+        <div class="error-msg">
+          <span class="far fa-question-circle">Please accept the terms and conditions to continue.</span>
+        </div>
+      </div>
+
+      <span class="or">or</span>
+
+      <form action="submit">
+
+        <div class="signup">
+
+          <label for="email">What's your email?</label>
+          <input type="email" id="email" placeholder="Enter your email.">
+          <div class="error-msg">
+            <span class="far fa-question-circle">You need to enter my email.</span>
+          </div>
+
+          <label for="confirm-label">Confirm you email</label>
+          <input type="email" id="confirm-email" placeholder="Enter your email again">
+          <div class="error-msg">
+            <span class="far fa-question-circle">You need to confirm your email.</span>
+          </div>
+
+          <label for="password">Create a password</label>
+          <input type="password" id="password" placeholder="Create a password.">
+          <div class="error-msg">
+            <span class="far fa-question-circle">You need to enter a password.</span>
+          </div>
+
+          <label for="username">What should we call you?</label>
+          <input type="text" id="username" placeholder="Enter a profile name.">
+          <div class="error-msg">
+            <span class="far fa-question-circle">Enter a name for your profile.</span>
+          </div>
+  
+        </div>
+
+        <label for="">What's your date of birth?</label>
+        <div class="birthday">
+
+          <input type="text" name="day" id="day" placeholder="DD"></input>
+
+          <select name="month" id="month" placeholder="Month">
+            <option value="">Month</option>
+            <option value="jan">01</option>
+            <option value="feb">02</option>
+            <option value="mar">03</option>
+            <option value="apr">04</option>
+            <option value="may">05</option>
+            <option value="jun">06</option>
+            <option value="jul">07</option>
+            <option value="aug">08</option>
+            <option value="sep">09</option>
+            <option value="oct">10</option>
+            <option value="nov">11</option>
+            <option value="dec">12</option>
+          </select>
+
+          <input type="text" name="year" id="year" placeholder="YYYY">
+
+        </div>
+        <div class="error-msg">
+          <span class="far fa-question-circle">Enter a valid day of the month.</span>
+          <span class="far fa-question-circle">Select you birth month</span>
+          <span class="far fa-question-circle">Enter a valid year.</span>
+        </div>
+
+        <label for="gender">What's your gender</label>
+        <div class="gender">
+
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="female" id="female">
+  
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="male" id="male">
+  
+          <label for="non-binary">Non-Binary</label>
+          <input type="radio" name="gender" value="non-binary" id="non-binary">
+
+        </div>
+
+        <div class="marketing">
+
+          <p>We may send you emails with news or promotions occasionally. Go to your Email notifications page to control the messages
+          we send.</p>
+          
+          <input class="share-marketing">
+
+            <label for="marketing"></label>
+            <input type="checkbox" id="marketing" name="marketing" value="marketing" required>Share my registration data with Spotify's content providers for marketing purposes.</input> 
+
+          </input>
+  
+          <div class="terms-agreement">
+
+            <label for="agreement">I agree to the <a>Spotify terms & conditions</a> and <a>Privacy Policy</a>.</label>
+            <input type="checkbox" id="agreement" name="agreement" value="agreement" required>
+
+          </div>
+  
+        </div>
+
+        <div class="security">
+
+          <label for="robot">I'm not a robot</label>
+          <input type="checkbox" >
+          <img src="./assets/recaptcha-logo.png" alt="recaptcha logo">
+  
+          <button>Sign Up</button>
+
+        </div>
+
+
+      </form>
+
+      <p>Already have an account? <a href="">Log in</a></p>
+
+    </div>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+  <script src="./script.js"></script>
+</body>
+</html>
+
